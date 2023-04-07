@@ -1,0 +1,26 @@
+CREATE TABLE Guestroom_Records (id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Condition TEXT, Size INTEGER );
+
+INSERT INTO Guestroom_Records VALUES (1, "Zach Bryan", 20, "New" , 7);
+INSERT INTO Guestroom_Records VALUES (2, "Motley Crue", 15, "Used", 12);
+INSERT INTO Guestroom_Records VALUES (3, "Miley Cyrus", 35, "New", 12);
+INSERT INTO Guestroom_Records VALUES (4, "Soundgarden", 25, "Used", 10);
+INSERT INTO Guestroom_Records VALUES (5, "311", 20, "Used", 12);
+INSERT INTO Guestroom_Records VALUES (6, "Rihanna", 35, "New", 12);
+INSERT INTO Guestroom_Records VALUES (7, "GFlip", 20, "New", 10);
+INSERT INTO Guestroom_Records VALUES (8, "Mac Miller", 35, "New", 12);
+INSERT INTO Guestroom_Records VALUES (9, "In This Moment", 15, "Used", 7);
+INSERT INTO Guestroom_Records VALUES (10, "Michael Jackson", 40, "New", 12);
+INSERT INTO Guestroom_Records VALUES (11, "Billie Eilish", 25, "Used", 10);
+INSERT INTO Guestroom_Records VALUES (12, "Limp Bizkit", 15, "Used", 12);
+INSERT INTO Guestroom_Records VALUES (13, "Harry Styles", 30, "New", 12);
+INSERT INTO Guestroom_Records VALUES (14, "Doja Cat", 25, "New", 12);
+INSERT INTO Guestroom_Records VALUES (15, "Matchbox Twenty", 15, "Used", 10);
+
+SELECT * FROM Guestroom_Records;
+
+--display the database ordered by price. 
+SELECT * FROM Guestroom_Records ORDER BY Price;
+
+--what is the avg price of items? 
+SELECT AVG(price) "avg price" FROM Guestroom_Records
+
